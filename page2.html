@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./page2.css">
+  <title>Miss & Mr Turismo Venezuela</title>
+</head>
+<body>
+  <main>
+    <form>
+      <div class="form-header">
+        <h1 class="form-header__title">Informacion personal</h1>
+      </div>
+  
+      <fieldset class="data">
+        <!-- <legend class="mailing__title">Mailing Address</legend> -->
+          <label for="name">
+            Nombre
+            <input required id="name" name="name" autocomplete="name" autocorrect="off" type="text" />
+          </label>
+          <label for="cellphone">
+            Número Celular
+            <input id="cellphone" name="cellphone" autocomplete="cellphone" autocorrect="off" type="number" min="0" />
+          </label>
+          <label for="email">
+            Correo Electronico
+            <input id="email" name="email" autocomplete="email" autocorrect="off" type="email" />
+          </label>
+          <label for="address">
+            Dirección
+            <textarea id="address" name="textarea" dir="auto"></textarea>
+          </label>
+          <label for="experience">
+            ¿Posee experiencia prévia en el mundo del modelaje?
+            <select name="experience" id="experience">
+              <option value="si">SI</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+          <label for="image">
+            Subir imagen
+            <input type="file" name="image" id="image">
+          </label>
+      </fieldset>
+  
+      <input name="submit" type="submit" value="Guardar y continuar" />
+      <a href="./index.html"> &#10094; Prototipo 1 </a>
+    </form>
+  </main>
+</body>
+</html>

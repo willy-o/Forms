@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Miss & Mr Turismo Venezuela</title>
+</head>
+<body>
+  <form>
+    <h1>Informacion Personal</h1>
+    <div>
+      <label for="name">Nombre: </label>
+      <input required type="text" name="name" id="name" >
+    </div>
+    <div>
+      <label for="number">Número celular: </label>
+      <div>
+        <select required name="areaCode" id="areaCode">
+          <option value="414">0414</option>
+          <option value="424">0424</option>
+          <option value="412">0412</option>
+          <option value="416">0416</option>
+          <option value="426">0426</option>
+        </select>
+        <input required type="number" name="number" id="number" min="0" >
+      </div>
+    </div>
+    <div>
+      <label for="email">Correo electronico: </label>
+      <input required type="email" name="email" id="email" >
+    </div>
+    <div>
+      <label for="address">Dirección: </label>
+      <textarea required name="address" id="address" ></textarea>
+    </div>
+    <div>
+      <label for="experience">¿Posee experiencia prévia en el mundo del modelaje?</label>
+      <select name="experience" id="experience">
+        <option value="si">SI</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <div>
+      <label for="image">Subir imagen</label>
+      <input type="file" name="image" id="image">
+    </div>
+    <input name="submit" type="submit" value="Guardar y continuar" />
+    <a href="./page2.html">Prototipo 2 &#10095;</a>
+  </form>
+</body>
+</html>
